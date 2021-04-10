@@ -26,23 +26,35 @@ print(new_str)
 ########################################################################################################################
 
 value = input("Угадай мое число:")
-number = int(value)
-print (number)
-wrong_number= True
+value_letter = True
+while value_letter:
+    if value.isalpha():
+        number = str(value)
+        value = input("Число!!!!!!!!!:")
+
+    if value.isdigit ():
+        number = int(value)
+        wrong_number= True
+        value_letter = False
+
+wrong_number = True
 while wrong_number:
+    value_letter = False
+
     if number == 7:
         value_1 = "Успех!"
         str(value)
         print(value_1)
         wrong_number = False
+
     elif number > 7:
-        value_1= input("Введи число поменьше:")
-        number = int(value_1)
-        print(number)
-    elif number < 7:
-        value_2 = input("Введи число побольше:")
+        value_2 = input("Введи число поменьше:")
         number = int(value_2)
-        print(number)
+    elif number < 7:
+        value_3 = input("Введи число побольше:")
+        number = int(value_3)
+
+
 
 
 
