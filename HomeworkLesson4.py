@@ -20,9 +20,11 @@
 ########################################################################################################################
 my_string = '0123456789'
 my_string_2 = '0123456789'
+new_list = []
+# new_list.append(my_string)
 for symb_1 in my_string:
     for symb_2 in my_string_2:
         my_string = (int(symb_1 + symb_2))
-        new_list = []
+        # new_list = []
         new_list.append(my_string)
-        print(''.join(str(new_list)))
+print(str(new_list))
