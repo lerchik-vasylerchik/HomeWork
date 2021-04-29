@@ -45,14 +45,16 @@
 # my_list = []
 # my_set = set(my_str)
 # for symbol in my_set:
-#     my_list.append(symbol)
+#     if my_str.lower().count(symbol) == 1:
+#         my_list.append(symbol)
 # print(my_list)
+
 
 # Даны две строки. Создать список в который поместить те символы,
 # которые есть в обеих строках хотя бы раз.
 # my_str = "Where is my mind?"
 # my_str_1 = "See it swimming"
-# my_list = []
+#
 # my_set = set(my_str)
 # my_set_1 = set(my_str_1)
 # for symbol in my_set.intersection(my_set_1):
@@ -61,10 +63,15 @@
 
 # 7. Даны две строки. Создать список в который поместить те символы, которые есть в обеих строках,
 # но в каждой только по одному разу.
-my_str = "I like booo"
-my_str_1 = "I like wooo"
-result = [letter for letter in my_str.lower() if my_str_1.lower().count(letter) == 1 and my_str.lower().count(letter) == 1]
-print(result)
+# my_str = "I like booo"
+# my_str_1 = "I like wooo"
+# my_list = []
+# my_set = set(my_str)
+# my_set_1 = set(my_str_1)
+# for symbol in my_set.intersection(my_set_1):
+#     if my_str_1.lower().count(symbol) == 1 and my_str.lower().count(symbol) == 1:
+#         my_list.append(symbol)
+# print(my_list)
 
 
 
