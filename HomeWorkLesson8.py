@@ -53,6 +53,9 @@ for item in my_dict_1.items():
         result[item[0]] = item[1]
     else:
         result[item[0]] = [item[1], my_dict_2[item[0]]]
+for item in my_dict_2.items():
+    if item[0] not in my_dict_1:
+        result[item[0]] = item[1]
 
 print(result)
 
